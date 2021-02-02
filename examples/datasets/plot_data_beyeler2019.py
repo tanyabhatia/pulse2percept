@@ -132,11 +132,11 @@ plot_argus_phosphenes(data, argus)
 # To see how the phosphene drawings line up with the NFBs, we can also pass an
 # :py:class:`~pulse2percept.models.AxonMapModel` to the function.
 # Of course, we need to make sure that we use the correct dimensions. Subject
-# S2 had their optic disc center located 14 deg nasally, 2.4 deg superior from
+# S2 had their optic disc center located 16 deg nasally, 1.38 deg superior from
 # the fovea:
 
 from pulse2percept.models import AxonMapModel
-model = AxonMapModel(loc_od=(14, 2.4))
+model = AxonMapModel(loc_od=(16.2, 1.38))
 plot_argus_phosphenes(data, argus, axon_map=model)
 
 ###############################################################################
